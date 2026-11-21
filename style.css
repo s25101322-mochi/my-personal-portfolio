@@ -1,0 +1,311 @@
+/* GENERAL STYLE */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #FFF9FA;
+    color: #80616B;
+    font-family: Georgia, serif;
+    line-height: 1.8;
+}
+
+/* NAVIGATION BAR */
+
+header {
+    background-color: #FCE4EA;
+    padding: 20px;
+    border-bottom: 1px solid #F4BFCB;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h2 {
+    color: #D98FA5;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+nav ul li a {
+    color: #80616B;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: #D98FA5;
+}
+
+/* MAIN CONTENT */
+
+main {
+    width: 85%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #D98FA5;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* HOME PAGE */
+
+.home-box {
+    background-color: #FCE4EA;
+    padding: 40px 20px;
+    border-radius: 20px;
+}
+.home-box img {
+    width: 500px;
+    max-width: 90%;
+    border: 8px solid white;
+    margin: 25px auto;
+}
+.about-button,
+main a {
+    display: inline-block;
+    background-color: #D98FA5;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+.about-button:hover,
+main a:hover {
+    background-color: #BA8294;
+}
+
+/* ABOUT PAGE */
+
+.baby {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: #FCE4EA;
+    padding: 25px;
+    margin: 30px 0;
+    border-radius: 20px;
+}
+.baby img {
+    width: 230px;
+    border: 8px solid white;
+}
+.baby h2 {
+    color: #C76B91;
+}
+.baby p {
+    text-align: left;
+}
+
+/* PROJECTS PAGE */
+
+main h2 {
+    margin-top: 25px;
+}
+
+main h2 + p {
+    margin-bottom: 15px;
+}
+
+/* CONTACT PAGE */
+
+.contact {
+    background-color: #FCE4EA;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.contact-info {
+    margin: 25px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #EBA6B8;
+    border-radius: 10px;
+    font-family: Georgia, serif;
+}
+
+button {
+    background-color: #D98FA5;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    font-family: Georgia, serif;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #BA8294;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #FCE4EA;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* MOBILE DESIGN */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav ul {
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+    main {
+        width: 92%;
+    }
+    .baby {
+        flex-direction: column;
+    }
+    .baby img {
+        width: 200px;
+        max-width: 100%;
+    }
+    .baby p {
+        text-align: center;
+    }
+    .home-box {
+        padding: 25px 15px;
+    }
+    .contact {
+        padding: 20px;
+    }
+}
+/* EDUCATION SECTION */
+.education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FCE4EA;
+    padding: 25px;
+    border-radius: 20px;
+}
+.education img {
+    width: 200px;
+    border: 8px solid white;
+    margin-bottom: 15px;
+}
+.education h3 {
+    color: #C76B91;
+}
+.education p {
+    text-align: center;
+}
+
+/* What I'm Learning */
+
+.learning {
+    background-color: #FCE4EA;
+    padding: 25px;
+    margin: 30px 0;
+    border-radius: 20px;
+}
+.learning-item {
+    background-color: white;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 15px;
+}
+.learning-item h3 {
+    color: #C76B91;
+}
+
+/* Things I Love */
+
+.hobbies {
+    background-color: #FCE4EA;
+    padding: 30px;
+    margin: 30px 0;
+    border-radius: 20px;
+}
+.hobby-item {
+    background-color: #FFF9FA;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #F4BFCB;
+    border-radius: 15px;
+}
+.hobby-item h3 {
+    color: #C76B91;
+}
+.hobby-item span {
+    color: #D98FA5;
+    font-style: italic;
+    font-size: 14px;
+}
+/* Projects Page */
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 35px;
+}
+.project-card {
+    background-color: #FCE4EA;
+    width: 45%;
+    padding: 25px;
+    border: 2px solid #F4BFCB;
+    border-radius: 20px;
+    text-align: center;
+}
+.project-card h2 {
+    color: #C76B91;
+    font-size: 21px;
+}
+.project-number {
+    color: #D98FA5;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+.tools {
+    display: inline-block;
+    background-color: white;
+    color: #C76B91;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+.project-note {
+    color: #D98FA5;
+    font-style: italic;
+    font-size: 14px;
+}
+.project-card:hover {
+    background-color: #FFF0F4;
+}
+.ending {
+    margin-top: 40px;
+    font-style: italic;
+}
+/* Projects on smaller screens */
+@media (max-width: 600px) {
+    .project-card {
+        width: 100%;
+    }
+}
